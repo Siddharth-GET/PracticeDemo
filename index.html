@@ -1,0 +1,55 @@
+<DOCTYPE! html>
+<html>
+<head>
+<link rel="stylesheet" href="css/style.css"/>
+<meta charset="UTF-8">
+<title>Demo Document</title>
+</head>
+<body>
+<div class="container">
+  <h2>Welcome to the Demo Havells Form</h2>
+  <form action="" name="registration">
+    
+    <p style="text-align:center;"><img src="logo.jpg" style="width:128px;height:128px;" alt="Havells Logo"></p>
+
+    <label for="firstname">Employee First Name</label>
+    <input type="text" name="firstname" id="firstname" placeholder="First Name"/>
+
+    <label for="lastname">Employee Last Name</label>
+    <input type="text" name="lastname" id="lastname" placeholder="Last Name"/>
+
+    <label for="email">Employee Email</label>
+    <input type="email" name="email" id="email" placeholder="yourid@yourmail.com"/>
+
+    <label for="password">Password</label>
+    <input type="password" name="password" id="password" placeholder="**********"/>
+	<label for="accounttype">Account Type</label>
+	<input list="accounttype" name="accounttype" placeholder="Select from the options below">
+	<label for="file">Upload the Letter of Invitation</label>
+	<input type="file" id="myFile" name="filename" required>
+	<datalist id="accounttype" required>
+    <option value="New Employee">
+    <option value="Vendor">
+    <option value="Service Provider">
+    <option value="Manucfacturer">
+    <option value="Distributor">
+    </datalist> 
+	<label for="department">Choose your designated department</label>
+     <select id="department" name="department" size="3" required>
+     <option value="volvo">Main Office</option>
+     <option value="saab">Secondary Office</option>
+     <option value="fiat">Office Location-1</option>
+     <option value="audi">Office Location-2</option>
+    </select><br><br>
+	
+
+    <button type="submit">Register</button>
+	<button type="submit">Already Registered?Login here</button>
+
+  </form>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+<script src="rvalidate.js"></script>
+</body>
+</html>
